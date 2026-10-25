@@ -1,0 +1,8 @@
+services:
+  xiaov2bxray:
+    image: ghcr.io/YOUR_GITHUB_USERNAME/xiaov2bxray:latest
+    container_name: xiaov2bxray
+    restart: always
+    network_mode: host
+    volumes:
+      - ./config.json:/etc/xiaov2bXray/config.json:ro
